@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>MoneroSMS</title>
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>M</text></svg>">
+        <style>
+            body{
+                background-color: black;
+                color: white;
+                font-size: xx-large;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            img{
+                max-width: 400px;
+            }
+            a, a:visited{
+                color: white;
+	    }
+
+	    h2,h1{ display: inline;}
+	    
+	    #logoMobile{
+		display: none;
+		}
+		@media only screen and (max-width: 1016px) {
+			pre{
+				white-space: pre-wrap;
+				font-size: 2.5em;
+				margin-left: 1em;
+			}
+			#logo{
+			display: none;
+			}
+			#logoMobile{
+			display: inline;
+			}
+		}	
+        </style>
+    </head>
+    <body>
+<pre>
+    <h1 id="logoMobile">MoneroSMS</h1>
+<span id="logo">
+    __   __                                     _____ __   __   _____
+    |    |    __.  , __     ___  .___    __.   (      |    |   (
+    |\  /|  .'   \ |'  `. .'   ` /   \ .'   \   `--.  |\  /|    `--.
+    | \/ |  |    | |    | |----' |   ' |    |      |  | \/ |       |
+    /    /   `._.' /    | `.___, /      `._.' \___.'  /    /  \___.'
+
+                                Now in beta
+
+</span>
+<!--h1 style="color: red">Service is down for maitenance (dec 10 2022) - back up shortly</h1>-->
+    Anonymous SMS via web app, open source CLI or email proxy!
+
+    Phone numbers are one of the most common privacy leaks, get anonymous numbers today!
+
+
+    <a href="/app/">Open Web App</a>
+
+    <a href="/monerosms-1.0.1.tar">Download Now</a>
+    <a href="https://github.com/EgosOwn/monerosms-client">Repo</a>
+
+    <h2>Virtual SMS $3.59 USD/mo</h2>
+
+	- Cannot always activate accounts/receive short codes
+	+ Can send messages
+        + Supports email relay
+
+    <h2>Real cell number $9.99/mo (CURRENTLY UNAVAILABLE)</h2>
+
+	+ Almost always activate accounts/receive short codes
+	- Cannot send messages (I may enable this on a per customer basis)
+        - Does not yet support email relay
+	* Must currently ask support@voidnet.tech to buy.
+
+
+    <h1>CLI Guide:</h1>
+
+    MoneroSMS requires Python 3.10+ with the requests library installed.
+
+    First you need to generate an account:
+    $ monero-sms.py generate
+
+    Back up the file it generates in order to retain access to your account. Lost accounts cannot be recovered.
+
+    View current pricing:
+    $ monero-sms.py pricing    
+
+    Get your Monero payment address:
+    $ monero-sms.py xmraddress
+    
+    After paying the address enough USD equivalent, check balance with:
+    $ monero-sms.py credits
+
+    Buy a virtual number (email support@voidnet.tech to buy a real cell number):
+    $ monero-sms.py listnumbers
+    $ monero-sms.py buynumber [number]
+
+    Watch a thread:
+    $ monero-sms.py watch [number]
+
+    Get messages:
+    $ monero-sms.py get [number] [offset]
+   
+    Send message:
+    $ monero-sms.py send [number]
+
+    You can list threads with:
+    $ monero-sms.py threads
+
+    Set email relay:
+    $ monero-sms.py setemail john@example.com
+
+    Disable email relay
+    $ monero-sms.py disableemail
+
+    <h1>Q&A</h1>
+
+    Can I have multiple numbers?
+        Each account can only have 1 number, but you may have multiple accounts unless you have
+	been banned from the service.
+
+    Does it support groups?
+        No, maybe at a later time.
+
+    Does it support MMS?
+        Yes, via email relay. Limited attachment types.
+
+    Can I use Tor or a VPN?
+        Yes, use of Tor or VPNs are allowed and are recommended.
+	To use .onion for the application, specify MONERO_SMS_TOR=tor_socks_port
+
+    Do you port numbers in or out?
+        Numbers can be ported in for $1.49 or ported out for free. Done on a best-effort basis
+
+    Can I use the numbers for SMS 2fa?
+        Yes, but virtual numbers may not work for some services. Use a hardware device or TOTP when possible.
+
+    Can I make or receive VoIP calls?
+        Not yet.
+
+    Do you recycle numbers?
+        We do not recycle phone numbers that are used at least once. When we release numbers, upstream providers may.
+	The only exception is if a number was refunded (in which case it never sent/received from our server).
+
+    Do you offer support?
+        Yes, email support@voidnet.tech with your account ID or message on Signal at 636-275-0837
+
+    Can I use the service as an API?
+        Yes, as long as the use conforms with the terms of service.
+
+    Why would I want a real cell number instead of a virtual numbers?
+        Virtual numbers (numbers associated with VoIP providers) are frequently blacklisted by various
+        companies and as such cannot always receive or send some messages, this frequently breaks account
+        activation.
+
+    What countries are available?
+        We only sell US numbers for now.
+
+    Can I text non-US/Canadian numbers?
+    	Not yet. (Other "1" country code numbers may work). This applies to both send/receive.
+
+    Can I have a refund?
+        Generally no. If you haven't bought a number yet we may be able to refund
+
+    Do you accept USD/Fiat/Bitcoin/altcoins?
+	Bitcoin, fiat, and shitcoins accepted manually. In the future they will
+        be accepted in an automated fashion. Monero is the most private method.
+
+    <a href="mailto:orders@voidnet.tech">Order number/pay bill manually/complain</a>
+
+    <a href="https://api.monerosms.com/tos">Service agreement and privacy policy</a>
+
+<small>
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+xjMEYmWK0hYJKwYBBAHaRw8BAQdAY+zBjUDL7rXvEA6roxEWISG9+C7kUiOirY+J
+un/UDwrNG0tldmluIDxiZWFyZG9nQG1haWxib3gub3JnPsKRBBMWCAA5FiEEcvOe
+4K51hTSCxKi740WVfj5azOoFAmJlitIFCQWjmoACGwMFCwkIBwIGFQgJCgsCBRYC
+AwEAAAoJEONFlX4+WszqDpIA/3td5RTpczX1U3ZvcZAmW86TB9/39ZNRSK/kFfvy
+pSy4AP9FLvrOhSvrDMrWJObqD9UOM7/pLfcn6lsLYUGJlm7YCs44BGJlitISCisG
+AQQBl1UBBQEBB0D3NFgPE7Hh5MUsF0+EPfFRdV9rRd9K/9URVxa0Pc/RHgMBCAfC
+fgQYFggAJhYhBHLznuCudYU0gsSou+NFlX4+WszqBQJiZYrSBQkFo5qAAhsMAAoJ
+EONFlX4+WszqfW0A/jhSiPkm/X4WFtBRSsLAIQ/z+9fYvLlgXZaDOzbC0R0lAP4z
+8AYELp3BZynECo761H4qwwq/IJXgKNU/Fp862mk1AQ==
+=MDod
+-----END PGP PUBLIC KEY BLOCK-----
+</small>
+</pre>
+    </body>
+
+</html>
