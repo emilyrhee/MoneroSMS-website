@@ -8,15 +8,19 @@ body {
     background-color: rgb(49,49,49);
 }
 
-.nav-bar {
+#logo {
+    max-width: 18%;
+}
+
+nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    background-color: rgb(34,34,34);
 }
 
 ul {
     list-style-type: none;
     overflow: hidden;
-    background-color: rgb(34,34,34);
 }
 
 li {
