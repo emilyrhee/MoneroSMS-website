@@ -8,6 +8,10 @@ body {
     background-color: rgb(49,49,49);
 }
 
+.body-properties {
+    margin: 100px;
+}
+
 #logo {
     max-width: 15%;
     margin-left: 100px;
@@ -35,10 +39,6 @@ li a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration:none;
     margin-right: 50px;
-}
-
-.hero {
-    margin: 100px 100px;
 }
 
 .hero-text {
