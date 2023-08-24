@@ -47,6 +47,16 @@ li a {
     line-height: 50px;
 }
 
+.pricing-boxes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pricing-headers {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 h1 {
     font-size: 4vw;
     margin-bottom: 20px;
