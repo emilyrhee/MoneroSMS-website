@@ -9,7 +9,8 @@ body {
 }
 
 #logo {
-    max-width: 18%;
+    max-width: 15%;
+    margin-left: 100px;
 }
 
 nav {
@@ -33,4 +34,5 @@ li a {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration:none;
+    margin-right: 50px;
 }
