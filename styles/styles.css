@@ -83,3 +83,10 @@ button {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.section-headers {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vw;
+    margin-top: 100px;
+}
