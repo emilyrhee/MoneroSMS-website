@@ -92,6 +92,31 @@ button {
     margin-bottom: 40px;
 }
 
+h4 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    margin-top: -35px;
+    margin-bottom: 30px;
+}
+
+.CLI-instruction {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+.terminal {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    background-color: rgb(34,34,34);
+    padding: 15px;
+    margin: 10px 0px;
+    margin-bottom: 35px;
+}
+
 details {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 10px;

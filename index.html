@@ -42,6 +42,42 @@
     
             <h3 class="section-headers">Pricing</h3>
             <h3 class="section-headers">CLI Guide</h3>
+            <h4>MoneroSMS requires Python 3.10+ with the requests library installed.</h4>
+
+            <p class="CLI-instruction">Generate an account</p>
+            <p class="terminal">$ monero-sms.py generate</p>
+
+            <p class="CLI-instruction">View current pricing</p>
+            <p class="terminal">$ monero-sms.py pricing</p>
+
+            <p class="CLI-instruction">Get your Monero payment address</p>
+            <p class="terminal">$ monero-sms.py xmraddress</p>
+
+            <p class="CLI-instruction">After paying the address enough USD equivalent, check balance</p>
+            <p class="terminal">$ monero-sms.py credits</p>
+
+            <p class="CLI-instruction">Buy a virtual number (email support@voidnet.tech to buy a real cell number)</p>
+            <p class="terminal">$ monero-sms.py listnumbers<br>$ monero-sms.py buynumber [number]</p>
+
+            <p class="CLI-instruction">Watch a thread</p>
+            <p class="terminal">$ monero-sms.py watch [number]</p>
+
+            <p class="CLI-instruction">Get messages</p>
+            <p class="terminal">$ monero-sms.py get [number] [offset]</p>
+
+            <p class="CLI-instruction">Send message</p>
+            <p class="terminal">$ monero-sms.py send [number]</p>
+
+            <p class="CLI-instruction">List threads</p>
+            <p class="terminal">$ monero-sms.py threads</p>
+
+            <p class="CLI-instruction">Set email relay</p>
+            <p class="terminal">$ monero-sms.py setemail john@example.com</p>
+
+            <p class="CLI-instruction">Disable email relay</p>
+            <p class="terminal">$ monero-sms.py disableemail</p>
+
+
             <h3 class="section-headers">FAQ</h3>
             <details>
                 <summary class="question">Can I have multiple numbers?</summary>
