@@ -36,3 +36,19 @@ li a {
     text-decoration:none;
     margin-right: 50px;
 }
+
+.hero-text {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 100px 100px;
+}
+
+h1 {
+    font-size: 4vw;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2vw;
+    font-weight: lighter;
+}
