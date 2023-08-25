@@ -12,7 +12,7 @@ body {
     margin: 100px;
 }
 
-#logo {
+#logo-with-monero {
     max-width: 15%;
     margin-left: 100px;
 }
@@ -178,4 +178,15 @@ details {
 .answer {
     color: white;
     margin-bottom: 5px;
+}
+
+footer {
+    background-color: rgb(34,34,34);
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 70px;
+    margin-left: 100px;
 }
