@@ -50,11 +50,41 @@ li a {
 .pricing-boxes {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2vw;
 }
 
-.pricing-headers {
+#virtual-sms {
+    background-color: rgb(77, 77, 77);
+    padding: 25px;
+    border-radius: 20px;
+}
+
+#real-cell {
+    background-color: rgb(77, 77, 77);
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.pricing-header {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.price {
+    color: rgb(34,34,34);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px 0px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.pricing-desc {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 30px;
 }
 
 h1 {
