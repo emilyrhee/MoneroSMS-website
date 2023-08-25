@@ -195,12 +195,20 @@ summary {
 }
 
 .answer {
-    color: white;
     margin-bottom: 5px;
 }
 
 #pgp {
     margin-top: 100px;
+    color:white;
+}
+
+#pgp-title {
+    color: white;
+}
+
+#key {
+    color: rgb(34,34,34);
 }
 
 footer {
