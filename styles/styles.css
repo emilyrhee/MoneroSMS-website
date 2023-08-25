@@ -101,9 +101,6 @@ li a {
     line-height: 30px;
 }
 
-#cli-guide {
-}
-
 h1 {
     font-size: 4vw;
     margin-bottom: 20px;
@@ -187,15 +184,22 @@ details {
     padding: 20px 20px;
 }
 
+summary {
+    cursor: pointer;
+}
+
 .question {
     color: rgb(242, 104, 34);
-    cursor: pointer;
     margin: 5px 0px;
 }
 
 .answer {
     color: white;
     margin-bottom: 5px;
+}
+
+#pgp {
+    margin-top: 100px;
 }
 
 footer {
