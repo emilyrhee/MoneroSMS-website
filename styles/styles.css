@@ -45,10 +45,20 @@ li a {
     margin-right: 50px;
 }
 
+.hero {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
 .hero-text {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 50px;
+}
+
+#smartphone {
+    max-width: 60%;
 }
 
 .pricing-boxes {
