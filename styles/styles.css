@@ -13,8 +13,9 @@ body {
 }
 
 #logo-with-monero {
-    max-width: 15%;
+    max-width: 50%;
     margin-left: 100px;
+    margin-top: 5px;
 }
 
 nav {
