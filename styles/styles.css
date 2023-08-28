@@ -196,6 +196,7 @@ summary {
 
 .answer {
     margin-bottom: 5px;
+    color: white;
 }
 
 #pgp {
@@ -205,10 +206,6 @@ summary {
 
 #pgp-title {
     color: white;
-}
-
-#key {
-    color: rgb(34,34,34);
 }
 
 footer {
