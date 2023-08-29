@@ -5,16 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>MoneroSMS</title>
         <link rel="stylesheet" href="styles/styles.css">
+        <link 
+            href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+            rel="stylesheet"
+        >
     </head>
 
     <body>
         <nav>
-            <a href="#"><img src="assets/logo_with_monero.svg" id="logo-with-monero" alt="Logo image"/></a>
-            <ul class="nav-bar">
+            <a class="nav-bar"href="#"><img src="assets/logo_with_monero.svg" id="logo-with-monero" alt="Logo image"/></a>
+            <ul class="nav-bar" id="nav-bar">
+                <a href="#"><span class="material-icons">close</span></a>
                 <li class="a hover"><a href="#pricing">Pricing</a></li>
                 <li class="a hover"><a href="#cli-guide">CLI Guide</a></li>
                 <li class="a hover"><a href="#faq">FAQ</a></li>
               </ul>
+              <a class="hamburger" href="#nav-bar">
+                <span class="material-icons">menu</span>
+              </a>
         </nav>
 
         <div class="body-properties">

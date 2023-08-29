@@ -220,6 +220,22 @@ footer {
     margin-top: 10px;
 }
 
-@media (min-width: 900px) {
-    
+.material-icons {
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    ul {
+        transform: translateY(-100%);
+    }
+
+    ul:target {
+        /* show navbar */
+        transform: translateY(0);
+    }
+
+    li {
+        float:none;
+    }
 }
