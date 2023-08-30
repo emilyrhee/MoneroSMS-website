@@ -167,6 +167,12 @@ summary {
     margin-top: 10px;
 }
 
+@media (max-width: 901px) {
+    #smartphone {
+        display: none
+    }
+}
+
 @media (min-width: 900px) {
     .body-properties {
         margin: 100px;
