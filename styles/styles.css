@@ -1,48 +1,11 @@
-* {
-    box-sizing: border-box;
-    margin: 0px 0px 0px 0px;
-    padding: 0;
-  }
-
 body {
     background-color: rgb(49,49,49);
-}
-
-.body-properties {
-    margin: 100px;
 }
 
 #logo-with-monero {
     max-width: 50%;
     margin-left: 100px;
     margin-top: 5px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(34,34,34);
-    position: sticky;
-    top: 0;
-    width: 100%;
-}
-
-ul {
-    list-style-type: none;
-    overflow: hidden;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    padding: 30px 50px;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration:none;
-    margin-right: 50px;
 }
 
 .hero {
@@ -57,20 +20,10 @@ li a {
     line-height: 50px;
 }
 
-h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-    line-height: 60px;
-}
-
 h2 {
     font-size: 1.5rem;
     font-weight: lighter;
     margin-top: -15px;
-}
-
-#smartphone {
-    max-width: 60%;
 }
 
 .pricing-boxes {
@@ -208,34 +161,58 @@ summary {
     color: white;
 }
 
-footer {
-    background-color: rgb(34,34,34);
-    display: flex;
-    justify-content: space-between;
-}
-
 #logo {
     width: 70px;
     margin-left: 100px;
     margin-top: 10px;
 }
 
-.material-icons {
-    color: white;
-    cursor: pointer;
-}
+@media (min-width: 900px) {
+    .body-properties {
+        margin: 100px;
+    }
 
-@media (max-width: 900px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(34,34,34);
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+    
     ul {
-        transform: translateY(-100%);
+        list-style-type: none;
+        overflow: hidden;
     }
-
-    ul:target {
-        /* show navbar */
-        transform: translateY(0);
-    }
-
+    
     li {
-        float:none;
+        float: left;
     }
-}
+    
+    li a {
+        display: block;
+        padding: 30px 50px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration:none;
+        margin-right: 50px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        line-height: 60px;
+    }
+
+    #smartphone {
+        max-width: 60%;
+    }    
+    
+    footer {
+        background-color: rgb(34,34,34);
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    }
