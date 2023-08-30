@@ -190,16 +190,20 @@ summary {
     margin-left: 100px;
     margin-top: 10px;
 }
+
 footer {
     background-color: rgb(34,34,34);
     display: flex;
     justify-content: space-between;
 }
 
+.material-icons {
+    color: white;
+}
 
 @media (max-width: 901px) {
     #smartphone {
-        display: none
+        display: none;
     }
 
     .body-properties {
@@ -239,6 +243,8 @@ footer {
     #smartphone {
         max-width: 60%;
     }    
-    
 
+    .hamburger {
+        display: none;
     }
+}
