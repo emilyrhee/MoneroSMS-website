@@ -195,6 +195,10 @@ summary {
     #smartphone {
         display: none
     }
+
+    .body-properties {
+        margin: 40px 10px;
+    }
 }
 
 @media (min-width: 900px) {
