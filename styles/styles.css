@@ -209,6 +209,14 @@ footer {
     .body-properties {
         margin: 40px 10px;
     }
+
+    ul {
+        transform: translateY(-100%);
+    }
+
+    ul:target {
+        transform: translateY(0);
+    }
 }
 
 @media (min-width: 900px) {
