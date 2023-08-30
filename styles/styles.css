@@ -217,6 +217,19 @@ footer {
     #nav-bar:target {
         transform: translateY(0);
     }
+
+    footer{
+        flex-direction: column;
+    }
+
+    #logo {
+        margin: 20px 10px ;
+    }
+
+    #footer-text { 
+        margin-left: 10px;
+        line-height: 25px;
+    }
 }
 
 @media (min-width: 900px) {
