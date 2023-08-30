@@ -1,5 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+}
+
 body {
     background-color: rgb(49,49,49);
+}
+
+nav {
+    display: flex;
+    background-color: rgb(34,34,34);
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a {
+    color: white;
+    text-decoration:none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #logo-with-monero {
@@ -179,16 +203,10 @@ summary {
     }
 
     nav {
-        display: flex;
         justify-content: space-between;
-        background-color: rgb(34,34,34);
-        position: sticky;
-        top: 0;
-        width: 100%;
     }
     
     ul {
-        list-style-type: none;
         overflow: hidden;
     }
     
@@ -199,9 +217,6 @@ summary {
     li a {
         display: block;
         padding: 30px 50px;
-        color: white;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-decoration:none;
         margin-right: 50px;
     }
 
