@@ -190,6 +190,12 @@ summary {
     margin-left: 100px;
     margin-top: 10px;
 }
+footer {
+    background-color: rgb(34,34,34);
+    display: flex;
+    justify-content: space-between;
+}
+
 
 @media (max-width: 901px) {
     #smartphone {
@@ -234,10 +240,5 @@ summary {
         max-width: 60%;
     }    
     
-    footer {
-        background-color: rgb(34,34,34);
-        display: flex;
-        justify-content: space-between;
-    }
-    
+
     }
