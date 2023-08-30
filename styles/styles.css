@@ -210,11 +210,11 @@ footer {
         margin: 40px 10px;
     }
 
-    ul {
+    #nav-bar {
         transform: translateY(-100%);
     }
 
-    ul:target {
+    #nav-bar:target {
         transform: translateY(0);
     }
 }
