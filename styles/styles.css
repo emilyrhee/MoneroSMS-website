@@ -26,12 +26,6 @@ li a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#logo-with-monero {
-    max-width: 50%;
-    margin-left: 100px;
-    margin-top: 5px;
-}
-
 .hero {
     display: flex;
     flex-direction:row;
@@ -227,6 +221,11 @@ footer {
         margin: 20px 10px ;
     }
 
+    #logo-with-monero {
+        margin: 15px 10px;
+        max-width: 70%;
+    }
+
     #footer-text { 
         margin-left: 10px;
         line-height: 25px;
@@ -236,6 +235,12 @@ footer {
 @media (min-width: 900px) {
     .body-properties {
         margin: 100px;
+    }
+
+    #logo-with-monero {
+        max-width: 50%;
+        margin-left: 100px;
+        margin-top: 5px;
     }
 
     nav {
