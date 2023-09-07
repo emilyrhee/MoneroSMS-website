@@ -9,7 +9,6 @@ body {
 }
 
 nav {
-    display: flex;
     background-color: rgb(34,34,34);
     position: sticky;
     top: 0;
@@ -118,7 +117,6 @@ button {
     font-size: 30px;
     margin-top: 100px;
     margin-bottom: 40px;
-    scroll-margin-top: 3em;
 }
 
 h4 {
@@ -205,12 +203,23 @@ footer {
         margin: 40px 10px;
     }
 
-    #nav-bar {
-        transform: translateY(-100%);
+    #bar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 0px;
     }
 
-    #nav-bar:target {
-        transform: translateY(0);
+    #nav-list {
+        display: none;
+    }
+
+    #nav-list:target {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        line-height: 50px;
     }
 
     footer{
@@ -222,9 +231,14 @@ footer {
     }
 
     #logo-with-monero {
-        margin: 15px 10px;
+        margin-left: 10px;
         max-width: 70%;
     }
+
+    .section-headers {
+        scroll-margin-top: 110px;
+    }
+
 
     #footer-text { 
         margin-left: 10px;
@@ -244,6 +258,7 @@ footer {
     }
 
     nav {
+        display: flex;
         justify-content: space-between;
     }
     
@@ -270,6 +285,10 @@ footer {
     #smartphone {
         max-width: 60%;
     }    
+
+    .section-headers {
+        scroll-margin-top: 90px;
+    }
 
     .hamburger {
         display: none;

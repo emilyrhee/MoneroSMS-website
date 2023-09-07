@@ -13,23 +13,26 @@
 
     <body>
         <nav>
-            <a href="#"><img src="assets/logo_with_monero.svg" id="logo-with-monero" alt="Logo image"/></a>
-            <ul class="nav-bar" id="nav-bar">
+            <div id="bar">
+                <a href="#"><img src="assets/logo_with_monero.svg" id="logo-with-monero" alt="Logo image"/></a>
                 <a class="hamburger" href="#">
                     <span class="material-icons">close</span>
                 </a>
+                <a class="hamburger" href="#nav-list">
+                    <span class="material-icons">menu</span>
+                </a>    
+            </div>
+
+              <ul id="nav-list">
                 <li class="a hover"><a href="#pricing">Pricing</a></li>
                 <li class="a hover"><a href="#cli-guide">CLI Guide</a></li>
                 <li class="a hover"><a href="#faq">FAQ</a></li>
               </ul>
-              <a class="hamburger" href="#nav-bar">
-                <span class="material-icons">menu</span>
-              </a>
         </nav>
 
         <div class="body-properties">
             <div class="hero">
-                <div id="foo"> 
+                <div> 
                     <div class="hero-text">
                         <h1>Anonymous SMS</h1>
                         <h2>through open source CLI or<br>email proxy</h2>    
