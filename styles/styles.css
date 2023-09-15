@@ -199,6 +199,14 @@ footer {
         display: none;
     }
 
+    h1 {
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        line-height: 45px;
+    }
+
     .body-properties {
         margin: 40px 10px;
     }
@@ -239,10 +247,10 @@ footer {
         scroll-margin-top: 110px;
     }
 
-
     #footer-text { 
         margin-left: 10px;
-        line-height: 25px;
+        line-height: 40px;
+        margin-bottom: 20px;
     }
 }
 
