@@ -190,21 +190,21 @@ footer {
     justify-content: space-between;
 }
 
-.material-icons {
-    color: white;
-    font-size: 35px !important;
-}
-
 @media (max-width: 901px) {
     #smartphone {
         display: none;
+    }
+
+    .material-icons {
+        color: white;
+        font-size: 35px !important;
     }
 
     .body-properties {
         margin: 40px 10px;
     }
 
-    #bar {
+    nav {
         display: block;
         align-items: center;
         padding: 10px 0px;
@@ -250,14 +250,19 @@ footer {
     }
 
     #footer-text { 
+        line-height: 40px;
         margin-left: 10px;
-        line-height: 25px;
+        margin-bottom: 20px;
     }
 }
 
 @media (min-width: 900px) {
     .body-properties {
         margin: 100px;
+    }
+
+    .material-icons {
+        display: none !important;
     }
 
     #logo-with-monero {
@@ -268,6 +273,7 @@ footer {
 
     nav {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
     }
     
