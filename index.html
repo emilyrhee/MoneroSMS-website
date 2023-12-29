@@ -1,213 +1,214 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>MoneroSMS</title>
-        <link rel="stylesheet" href="styles/styles.css">
-        <link 
-            href="https://fonts.googleapis.com/icon?family=Material+Icons" 
-            rel="stylesheet"
-        >
-    </head>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MoneroSMS</title>
+  <link rel="stylesheet" href="styles/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>📲</text></svg>">
+  <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+<script src="chrome-extension://nngceckbapebfimnlniiiahkandclblb/content/fido2/page-script.js"></script></head>
 
-    <body>
-        <nav>
-            <a href="#"><img src="assets/logo_with_monero.svg" id="logo-with-monero" alt="Logo image"/></a>
-            <label for="menu" class="material-icons">menu</label>
-            <input type="checkbox" id="menu" style="display:none;"/>
+<body>
+  <nav>
+      <a href="#"><img src="assets/logo_with_monero.svg" id="logo-with-monero" alt="Logo image"></a>
+      <label for="menu" class="material-icons">menu</label>
+      <input type="checkbox" id="menu" style="display:none;">
 
-            <ul id="nav-list">
-                <li class="a hover"><a href="#pricing">Pricing</a></li>
-                <li class="a hover"><a href="#cli-guide">CLI Guide</a></li>
-                <li class="a hover"><a href="#faq">FAQ</a></li>
-            </ul>
-        </nav>
+      <ul id="nav-list">
+          <li class="a hover"><a href="#pricing">Pricing</a></li>
+          <li class="a hover"><a href="#cli-guide">CLI Guide</a></li>
+          <li class="a hover"><a href="#faq">FAQ</a></li>
+      </ul>
+  </nav>
 
-        <div class="body-properties">
-            <div class="hero">
-                <div> 
-                    <div class="hero-text">
-                        <h1>Anonymous SMS</h1>
-                        <h2>through open source CLI or<br>email proxy</h2>    
-                    </div>    
-                    <div class="buttons">
-                        <button 
-                            id="webapp" 
-                            onclick="location.href='https://monerosms.com/app/'" 
-                            type="button">
-                            Web App
-                        </button>
-                        <a
-                            id="download-link" 
-                            href="assets/monerosms-1.0.1.tar" 
-                            download="monerosms-1.0.1.tar">
-                            <button 
-                                id="download">
-                                Download
-                            </button>
-                        </a>    
-                    </div>
-                </div>
-                
-                <div id="bar">
-                    <img src="assets/smartphone.svg" id="smartphone" alt="smartphone"/>
-                </div>
-            </div>
-    
-            <h3 class="section-headers" id="pricing">Pricing</h3>
-            <div class="pricing-boxes">
-                <div id="virtual-sms">
-                    <h5 class="pricing-header">Virtual SMS</h5>
-                    <h5 class="price">$3.59 USD/mo</h5>
-                    <p class="pricing-desc">
-                        ✓ Can send messages<br>
-                        ✓ Supports email relay<br>
-                        ✘ Cannot always activate accounts/receive 
-                        short codes
-                    </p>
-                </div>
-                <div id="real-cell">
-                    <h5 class="pricing-header">Real Cell Number</h5>
-                    <h5 class="price">$9.99 USD/mo</h5>
-                    <p class="pricing-desc">
-                        ✓ Almost always activate accounts/receive 
-                        short codes<br>
-                        ✘ Cannot send messages (may be enabled on a 
-                        per customer basis)<br>
-                        ✘ Does not yet support email relay
-                    </p>
-                </div>
-            </div>
+  <div class="body-properties">
+      <div class="hero">
+          <div> 
+              <div class="hero-text">
+                  <h1>Anonymous SMS</h1>
+              </div>    
+  <br>
+              <div class="buttons">
+                  <a href="/app/" class="webapp-link">
+                  <button id="webapp" type="button">
+                      Open Web App
+                  </button>
+                  </a>
+                  <a id="download-link" href="monerosms-1.0.1.tar" download="monerosms-1.0.1.tar">
+                      <button id="download">
+                          Download CLI
+                      </button>
+                  </a>    
+              </div>
+          </div>
+          
+          <div id="bar">
+              <img src="assets/smartphone.svg" id="smartphone" alt="smartphone">
+          </div>
+      </div>
 
-            <h3 class="section-headers" id="cli-guide">CLI Guide</h3>
-            <h4>MoneroSMS requires Python 3.10+ with the requests library installed.</h4>
+      <h3 class="section-headers" id="pricing">Pricing</h3>
+      <div class="pricing-boxes">
+          <div id="virtual-sms">
+              <h5 class="pricing-header">Virtual SMS</h5>
+              <h5 class="price">$3.59 USD/mo</h5>
+              <p class="pricing-desc">
+                  ✓ Can send and receive messages<br>
+                  ✓ Supports email relay<br>
+                  ✘ Cannot always activate accounts/receive 
+                  short codes
+              </p>
+          </div>
+          <div id="real-cell">
+              <h5 class="pricing-header">Real Cell Number (*CURRENTLY OUT OF STOCK)</h5>
+              <h5 class="price">$9.99 USD/mo</h5>
+              <p class="pricing-desc">
+                  ✓ Almost always activate accounts/receive 
+                  short codes<br>
+                  ✘ Cannot send messages (may be enabled on a 
+                  per customer basis)<br>
+                  ✘ Does not yet support email relay
+              </p>
+          </div>
+      </div>
 
-            <p class="CLI-instruction">Generate an account</p>
-            <p class="terminal">$ monero-sms.py generate</p>
+      <h3 class="section-headers" id="faq">FAQ</h3>
+<details>
+  <summary class="question">How does billing work?</summary>
+  <p class="answer">After a number is purchased, the associated account is billed every 30 days. Additionally each message is billed at time of send/receive. It is your responsibility to keep your account funded enough to afford the monthly charge, otherwise your number will be permanently revoked.</p>
+</details>
+      <details>
+          <summary class="question">Can I have multiple numbers?</summary>
+          <p class="answer">Each account can only have 1 number, but you may have multiple accounts unless you have been banned from the service.</p>
+      </details>
+      <details>
+          <summary class="question">Does it support MMS?</summary>
+          <p class="answer">Yes, via email relay. Limited attachment types.</p>
+      </details>
+      <details>
+          <summary class="question">Can I use Tor or a VPN?</summary>
+          <p class="answer">Yes, use of Tor or VPNs are allowed and are recommended.
+              To use .onion for the application, specify MONERO_SMS_TOR=tor_socks_port</p>
+      </details>            
+      <details>
+          <summary class="question">Do you port numbers in or out?</summary>
+          <p class="answer">Numbers can be ported in for $1.49 or ported out for free. Done on a best-effort basis</p>
+      </details>            
+      <details>
+          <summary class="question">Can I use the numbers for SMS 2fa?</summary>
+          <p class="answer">Yes, but virtual numbers may not work for some services. Use a hardware device or TOTP when possible.</p>
+      </details>            
+      <details>
+          <summary class="question">Can I make or receive VoIP calls?</summary>
+          <p class="answer">Not yet.</p>
+      </details>            
+      <details>
+          <summary class="question">Do you recycle numbers?</summary>
+          <p class="answer">We do not recycle phone numbers that are used at least once. When we release numbers, upstream providers may.
+              The only exception is if a number was refunded (in which case it never sent/received from our server).</p>
+      </details>            
+      <details>
+          <summary class="question">Do you offer support?</summary>
+          <p class="answer">Yes, email support@voidnet.tech with your account ID or message on Signal at 636-275-0837</p>
+      </details>            
+      <details>
+          <summary class="question">Can I use the service as an API?</summary>
+          <p class="answer">Yes, as long as the use conforms with the terms of service.</p>
+      </details>            
+      <details>
+          <summary class="question">Why would I want a real cell number instead of a virtual numbers?</summary>
+          <p class="answer">Virtual numbers (numbers associated with VoIP providers) are frequently blacklisted by various
+              companies and as such cannot always receive or send some messages, this frequently breaks account
+              activation.</p>
+      </details>            
+      <details>
+          <summary class="question">What countries are available?</summary>
+          <p class="answer">We only sell US numbers for now.</p>
+      </details>
+      <details>
+          <summary class="question">Can I text non-US/Canadian numbers?</summary>
+          <p class="answer">Not yet. (Other "1" country code numbers may work). This applies to both send/receive.</p>
+      </details>
+      <details>
+          <summary class="question">Can I have a refund?</summary>
+          <p class="answer">Generally no. If you haven't bought a number yet we may be able to refund.</p>
+      </details>
+      <details>
+          <summary class="question">Do you accept USD/Fiat/Bitcoin/altcoins?</summary>
+          <p class="answer">Bitcoin, fiat, and shitcoins accepted manually. In the future they will
+              be accepted in an automated fashion. Monero is the most private method.</p>
+      </details>
 
-            <p class="CLI-instruction">View current pricing</p>
-            <p class="terminal">$ monero-sms.py pricing</p>
 
-            <p class="CLI-instruction">Get your Monero payment address</p>
-            <p class="terminal">$ monero-sms.py xmraddress</p>
+      <h3 class="section-headers" id="cli-guide">CLI Guide</h3>
+      <h4>MoneroSMS requires Python 3.10+ with the requests library installed.</h4>
 
-            <p class="CLI-instruction">After paying the address enough USD equivalent, check balance</p>
-            <p class="terminal">$ monero-sms.py credits</p>
+      <p class="CLI-instruction">Generate an account</p>
+      <p class="terminal">$ monero-sms.py generate</p>
 
-            <p class="CLI-instruction">Buy a virtual number (email support@voidnet.tech to buy a real cell number)</p>
-            <p class="terminal">$ monero-sms.py listnumbers<br>$ monero-sms.py buynumber [number]</p>
+      <p class="CLI-instruction">View current pricing</p>
+      <p class="terminal">$ monero-sms.py pricing</p>
 
-            <p class="CLI-instruction">Watch a thread</p>
-            <p class="terminal">$ monero-sms.py watch [number]</p>
+      <p class="CLI-instruction">Get your Monero payment address</p>
+      <p class="terminal">$ monero-sms.py xmraddress</p>
 
-            <p class="CLI-instruction">Get messages</p>
-            <p class="terminal">$ monero-sms.py get [number] [offset]</p>
+      <p class="CLI-instruction">After paying the address enough USD equivalent, check balance</p>
+      <p class="terminal">$ monero-sms.py credits</p>
 
-            <p class="CLI-instruction">Send message</p>
-            <p class="terminal">$ monero-sms.py send [number]</p>
+      <p class="CLI-instruction">Buy a virtual number (email support@voidnet.tech to buy a real cell number)</p>
+      <p class="terminal">$ monero-sms.py listnumbers<br>$ monero-sms.py buynumber [number]</p>
 
-            <p class="CLI-instruction">List threads</p>
-            <p class="terminal">$ monero-sms.py threads</p>
+      <p class="CLI-instruction">Watch a thread</p>
+      <p class="terminal">$ monero-sms.py watch [number]</p>
 
-            <p class="CLI-instruction">Set email relay</p>
-            <p class="terminal">$ monero-sms.py setemail john@example.com</p>
+      <p class="CLI-instruction">Get messages</p>
+      <p class="terminal">$ monero-sms.py get [number] [offset]</p>
 
-            <p class="CLI-instruction">Disable email relay</p>
-            <p class="terminal">$ monero-sms.py disableemail</p>
+      <p class="CLI-instruction">Send message</p>
+      <p class="terminal">$ monero-sms.py send [number]</p>
+
+      <p class="CLI-instruction">List threads</p>
+      <p class="terminal">$ monero-sms.py threads</p>
+
+      <p class="CLI-instruction">Set email relay</p>
+      <p class="terminal">$ monero-sms.py setemail john@example.com</p>
+
+      <p class="CLI-instruction">Disable email relay</p>
+      <p class="terminal">$ monero-sms.py disableemail</p>
+
+      <details id="pgp">
+          <summary id="pgp-title">PGP Public Key</summary>
+          <p class="answer">
+</p><pre>-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+xjMEYmWK0hYJKwYBBAHaRw8BAQdAY+zBjUDL7rXvEA6roxEWISG9+C7kUiOirY+J
+un/UDwrNG0tldmluIDxiZWFyZG9nQG1haWxib3gub3JnPsKRBBMWCAA5FiEEcvOe
+4K51hTSCxKi740WVfj5azOoFAmJlitIFCQWjmoACGwMFCwkIBwIGFQgJCgsCBRYC
+AwEAAAoJEONFlX4+WszqDpIA/3td5RTpczX1U3ZvcZAmW86TB9/39ZNRSK/kFfvy
+pSy4AP9FLvrOhSvrDMrWJObqD9UOM7/pLfcn6lsLYUGJlm7YCs44BGJlitISCisG
+AQQBl1UBBQEBB0D3NFgPE7Hh5MUsF0+EPfFRdV9rRd9K/9URVxa0Pc/RHgMBCAfC
+fgQYFggAJhYhBHLznuCudYU0gsSou+NFlX4+WszqBQJiZYrSBQkFo5qAAhsMAAoJ
+EONFlX4+WszqfW0A/jhSiPkm/X4WFtBRSsLAIQ/z+9fYvLlgXZaDOzbC0R0lAP4z
+8AYELp3BZynECo761H4qwwq/IJXgKNU/Fp862mk1AQ==
+=MDod
+-----END PGP PUBLIC KEY BLOCK-----
 
 
-            <h3 class="section-headers" id="faq">FAQ</h3>
-            <details>
-                <summary class="question">Can I have multiple numbers?</summary>
-                <p class="answer">Each account can only have 1 number, but you may have multiple accounts unless you have been banned from the service.</p>
-            </details>
-            <details>
-                <summary class="question">Does it support groups?</summary>
-                <p class="answer">No, maybe at a later time.</p>
-            </details>
-            <details>
-                <summary class="question">Does it support MMS?</summary>
-                <p class="answer">Yes, via email relay. Limited attachment types.</p>
-            </details>
-            <details>
-                <summary class="question">Can I use Tor or a VPN?</summary>
-                <p class="answer">Yes, use of Tor or VPNs are allowed and are recommended.
-                    To use .onion for the application, specify MONERO_SMS_TOR=tor_socks_port</p>
-            </details>            
-            <details>
-                <summary class="question">Do you port numbers in or out?</summary>
-                <p class="answer">Numbers can be ported in for $1.49 or ported out for free. Done on a best-effort basis</p>
-            </details>            
-            <details>
-                <summary class="question">Can I use the numbers for SMS 2fa?</summary>
-                <p class="answer">Yes, but virtual numbers may not work for some services. Use a hardware device or TOTP when possible.</p>
-            </details>            
-            <details>
-                <summary class="question">Can I make or receive VoIP calls?</summary>
-                <p class="answer">Not yet.</p>
-            </details>            
-            <details>
-                <summary class="question">Do you recycle numbers?</summary>
-                <p class="answer">We do not recycle phone numbers that are used at least once. When we release numbers, upstream providers may.
-                    The only exception is if a number was refunded (in which case it never sent/received from our server).</p>
-            </details>            
-            <details>
-                <summary class="question">Do you offer support?</summary>
-                <p class="answer">Yes, email support@voidnet.tech with your account ID or message on Signal at 636-275-0837</p>
-            </details>            
-            <details>
-                <summary class="question">Can I use the service as an API?</summary>
-                <p class="answer">Yes, as long as the use conforms with the terms of service.</p>
-            </details>            
-            <details>
-                <summary class="question">Why would I want a real cell number instead of a virtual numbers?</summary>
-                <p class="answer">Virtual numbers (numbers associated with VoIP providers) are frequently blacklisted by various
-                    companies and as such cannot always receive or send some messages, this frequently breaks account
-                    activation.</p>
-            </details>            
-            <details>
-                <summary class="question">What countries are available?</summary>
-                <p class="answer">We only sell US numbers for now.</p>
-            </details>
-            <details>
-                <summary class="question">Can I text non-US/Canadian numbers?</summary>
-                <p class="answer">Not yet. (Other "1" country code numbers may work). This applies to both send/receive.</p>
-            </details>
-            <details>
-                <summary class="question">Can I have a refund?</summary>
-                <p class="answer">Generally no. If you haven't bought a number yet we may be able to refund.</p>
-            </details>
-            <details>
-                <summary class="question">Do you accept USD/Fiat/Bitcoin/altcoins?</summary>
-                <p class="answer">Bitcoin, fiat, and shitcoins accepted manually. In the future they will
-                    be accepted in an automated fashion. Monero is the most private method.</p>
-            </details>
+</pre>		
+          <p></p>
+      </details>
+  </div>
+  <footer>
+      <a href="#"><img src="assets/logo.svg" id="logo" alt="MoneroSMS logo"></a>
+      <ul id="footer-text">
+  <li class="a hover"><a href="http://xmr4smsoncunkfgfjr6xmxl57afsmuu6rg2bwuysbgg4wdtoawamwxad.onion/">xmr4smsoncunk[...].onion</a></li>
+          <li class="a hover"><a href="https://api.monerosms.com/tos">Service Agreement &amp; Privacy Policy</a></li>
+          <li class="a hover"><a href="mailto:support@monerosms.com">Contact</a></li>
+          <li class="a hover"><a href="https://github.com/EgosOwn/monerosms-client">Repository</a></li>
+      </ul>        
+  </footer>
 
-            <details id="pgp">
-                <summary id="pgp-title">PGP Public Key</summary>
-                <p 
-                    class="answer">
-                    xjMEYmWK0hYJKwYBBAHaRw8BAQdAY+zBjUDL7rXvEA6roxEWISG9+C7kUiOirY+J
-                    un/UDwrNG0tldmluIDxiZWFyZG9nQG1haWxib3gub3JnPsKRBBMWCAA5FiEEcvOe
-                    4K51hTSCxKi740WVfj5azOoFAmJlitIFCQWjmoACGwMFCwkIBwIGFQgJCgsCBRYC
-                    AwEAAAoJEONFlX4+WszqDpIA/3td5RTpczX1U3ZvcZAmW86TB9/39ZNRSK/kFfvy
-                    pSy4AP9FLvrOhSvrDMrWJObqD9UOM7/pLfcn6lsLYUGJlm7YCs44BGJlitISCisG
-                    AQQBl1UBBQEBB0D3NFgPE7Hh5MUsF0+EPfFRdV9rRd9K/9URVxa0Pc/RHgMBCAfC
-                    fgQYFggAJhYhBHLznuCudYU0gsSou+NFlX4+WszqBQJiZYrSBQkFo5qAAhsMAAoJ
-                    EONFlX4+WszqfW0A/jhSiPkm/X4WFtBRSsLAIQ/z+9fYvLlgXZaDOzbC0R0lAP4z
-                    8AYELp3BZynECo761H4qwwq/IJXgKNU/Fp862mk1AQ==
-                    =MDod
-                </p>
-            </details>
-        </div>
-        <footer>
-            <a href="#"><img src="assets/logo.svg" id="logo" alt="MoneroSMS logo"/></a>
-            <ul id="footer-text">
-                <li class="a hover"><a href="https://api.monerosms.com/tos">Service Agreement & Privacy Policy</a></li>
-                <li class="a hover"><a href="mailto:orders@voidnet.tech">Contact</a></li>
-                <li class="a hover"><a href="https://github.com/EgosOwn/monerosms-client">Repository</a></li>
-            </ul>        
-        </footer>
-    </body>
-</html>
+
+</body></html>
+
+
+

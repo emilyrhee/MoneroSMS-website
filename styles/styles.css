@@ -1,311 +1,315 @@
 * {
-    box-sizing: border-box;
-    margin: 0px 0px 0px 0px;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0px 0px 0px 0px;
+  padding: 0;
 }
 
 body {
-    background-color: rgb(49,49,49);
+  background-color: rgb(49,49,49);
 }
 
 nav {
-    background-color: rgb(34,34,34);
-    position: sticky;
-    top: 0;
-    width: 100%;
+  background-color: rgb(34,34,34);
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 li a {
-    color: white;
-    text-decoration:none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.hero {
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-}
-
-.hero-text {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 50px;
-}
-
-h2 {
-    font-size: 1.5rem;
-    font-weight: lighter;
-    margin-top: -15px;
-}
-
-.pricing-boxes {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 2vw;
-}
-
-#virtual-sms {
-    background-color: rgb(77, 77, 77);
-    padding: 25px;
-    border-radius: 20px;
-}
-
-#real-cell {
-    background-color: rgb(77, 77, 77);
-    padding: 25px;
-    border-radius: 20px;
-}
-
-.pricing-header {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    text-align: center;
-}
-
-.price {
-    color: rgb(34,34,34);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 10px 0px;
-    font-size: 18px;
-    text-align: center;
-}
-
-.pricing-desc {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 30px;
-}
-
-.buttons {
-    margin-top: 20px;
-}
-
-button {
-    border: none;
-    padding: 15px 32px;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 8px;
+  color: white;
+  text-decoration:none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #webapp {
-    background-color: rgb(242, 104, 34);
+background-color: rgb(242, 104, 34);
+}
+
+.hero {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+
+.hero-text {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 50px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin-top: -15px;
+}
+
+.pricing-boxes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+
+#virtual-sms {
+  background-color: rgb(77, 77, 77);
+  padding: 25px;
+  border-radius: 20px;
+}
+
+#real-cell {
+  background-color: rgb(77, 77, 77);
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.pricing-header {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.price {
+  color: rgb(34,34,34);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 10px 0px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.pricing-desc {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 30px;
+}
+
+.buttons, .webapp-link {
+  margin-top: 20px;
+}
+
+button, .download-link {
+  border: none;
+  padding: 15px 32px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.download-link {
+  background-color: rgb(242, 104, 34);
 }
 
 #download {
-    background-color: rgb(77, 77, 77);
+  background-color: rgb(77, 77, 77);
 }
 
-#download-link {
-    text-decoration:none;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+#download-link, .download-link {
+  text-decoration:none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .section-headers {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-    margin-top: 100px;
-    margin-bottom: 40px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  margin-top: 100px;
+  margin-bottom: 40px;
 }
 
 h4 {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: lighter;
-    font-size: 20px;
-    margin-top: -35px;
-    margin-bottom: 30px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  margin-top: -35px;
+  margin-bottom: 30px;
 }
 
 .CLI-instruction {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
 }
 
 .terminal {
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
-    background-color: rgb(34,34,34);
-    padding: 15px;
-    margin: 10px 0px;
-    margin-bottom: 35px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  background-color: rgb(34,34,34);
+  padding: 15px;
+  margin: 10px 0px;
+  margin-bottom: 35px;
 }
 
 details {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 20px 0px;
-    font-size: 19px;
-    line-height: 30px;
-    background-color: rgb(77, 77, 77);
-    border-radius: 4px;
-    padding: 20px 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px 0px;
+  font-size: 19px;
+  line-height: 30px;
+  background-color: rgb(77, 77, 77);
+  border-radius: 4px;
+  padding: 20px 20px;
 }
 
 summary {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .question {
-    color: rgb(242, 104, 34);
-    margin: 5px 0px;
+  color: rgb(242, 104, 34);
+  margin: 5px 0px;
 }
 
 .answer {
-    margin-bottom: 5px;
-    color: white;
-    overflow-wrap: break-word;
+  margin-bottom: 5px;
+  color: white;
+  overflow-wrap: break-word;
 }
 
 #pgp {
-    margin-top: 100px;
-    color:white;
+  margin-top: 100px;
+  color:white;
 }
 
 #pgp-title {
-    color: white;
+  color: white;
 }
 
 #logo {
-    width: 70px;
-    margin-left: 100px;
-    margin-top: 10px;
+  width: 70px;
+  margin-left: 100px;
+  margin-top: 10px;
 }
 
 footer {
-    background-color: rgb(34,34,34);
-    display: flex;
-    justify-content: space-between;
+  background-color: rgb(34,34,34);
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 901px) {
-    #smartphone {
-        display: none;
-    }
+  #smartphone {
+      display: none;
+  }
 
-    .material-icons {
-        color: white;
-        font-size: 35px !important;
-    }
+  .material-icons {
+      color: white;
+      font-size: 35px !important;
+  }
 
-    .body-properties {
-        margin: 40px 10px;
-    }
+  .body-properties {
+      margin: 40px 10px;
+  }
 
-    nav {
-        display: block;
-        align-items: center;
-        padding: 10px 0px;
-    }
+  nav {
+      display: block;
+      align-items: center;
+      padding: 10px 0px;
+  }
 
-    label {
-        float: right;
-        margin-top: 25px;
-        margin-right: 10px;
-    }
+  label {
+      float: right;
+      margin-top: 25px;
+      margin-right: 10px;
+  }
 
-    #nav-list {
-        display: none;
-    }
+  #nav-list {
+      display: none;
+  }
 
-    #menu + ul {
-        display: none;
-    }
+  #menu + ul {
+      display: none;
+  }
 
-    #menu:checked + ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 30px;
-        line-height: 50px;
-    }
+  #menu:checked + ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      line-height: 50px;
+  }
 
-    footer{
-        flex-direction: column;
-    }
+  footer{
+      flex-direction: column;
+  }
 
-    #logo {
-        margin: 20px 10px ;
-    }
+  #logo {
+      margin: 20px 10px ;
+  }
 
-    #logo-with-monero {
-        margin-left: 10px;
-        max-width: 70%;
-    }
+  #logo-with-monero {
+      margin-left: 10px;
+      max-width: 70%;
+  }
 
-    .section-headers {
-        scroll-margin-top: 110px;
-    }
+  .section-headers {
+      scroll-margin-top: 110px;
+  }
 
-    #footer-text { 
-        line-height: 40px;
-        margin-left: 10px;
-        margin-bottom: 20px;
-    }
+  #footer-text { 
+      line-height: 40px;
+      margin-left: 10px;
+      margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 900px) {
-    .body-properties {
-        margin: 100px;
-    }
+  .body-properties {
+      margin: 100px;
+  }
 
-    .material-icons {
-        display: none !important;
-    }
+  .material-icons {
+      display: none !important;
+  }
 
-    #logo-with-monero {
-        max-width: 50%;
-        margin-left: 100px;
-        margin-top: 5px;
-    }
+  #logo-with-monero {
+      max-width: 50%;
+      margin-left: 100px;
+      margin-top: 5px;
+  }
 
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    ul {
-        overflow: hidden;
-    }
-    
-    li {
-        float: left;
-    }
-    
-    li a {
-        display: block;
-        padding: 30px 50px;
-        margin-right: 50px;
-    }
+  nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  
+  ul {
+      overflow: hidden;
+  }
+  
+  li {
+      float: left;
+  }
+  
+  li a {
+      display: block;
+      padding: 30px 50px;
+      margin-right: 50px;
+  }
 
-    h1 {
-        font-size: 3.5rem;
-        margin-bottom: 20px;
-        line-height: 60px;
-    }
+  h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      line-height: 60px;
+  }
 
-    #smartphone {
-        max-width: 60%;
-    }    
+  #smartphone {
+      max-width: 60%;
+  }    
 
-    .section-headers {
-        scroll-margin-top: 90px;
-    }
+  .section-headers {
+      scroll-margin-top: 90px;
+  }
 
-    .hamburger {
-        display: none;
-    }
+  .hamburger {
+      display: none;
+  }
 }
