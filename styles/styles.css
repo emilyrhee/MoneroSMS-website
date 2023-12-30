@@ -196,57 +196,51 @@ footer {
 
 @media (max-width: 901px) {
   #smartphone {
-      display: none;
-  }
-
-  .material-icons {
-      color: white;
-      font-size: 35px !important;
+    display: none;
   }
 
   .body-properties {
-      margin: 40px 10px;
+    margin: 40px 10px;
   }
 
   nav {
-      display: block;
-      align-items: center;
-      padding: 10px 0px;
+    display: block;
+    padding: 10px 0px;
   }
 
   label {
-      float: right;
-      margin-top: 25px;
-      margin-right: 10px;
+    float: right;
+		padding: 20px 0px;
   }
 
   #nav-list {
-      display: none;
+    display: none;
   }
 
   #menu + ul {
-      display: none;
+    display: none;
   }
 
   #menu:checked + ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 30px;
-      line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+    width: 100%;
+    line-height: 50px;
   }
 
   footer{
-      flex-direction: column;
+    flex-direction: column;
   }
 
   #logo {
-      margin: 20px 10px ;
+    margin: 20px 10px ;
   }
 
   #logo-with-monero {
-      margin-left: 10px;
-      max-width: 70%;
+    margin-left: 10px;
+    max-width: 70%;
   }
 
   .section-headers {
@@ -254,62 +248,58 @@ footer {
   }
 
   #footer-text { 
-      line-height: 40px;
-      margin-left: 10px;
-      margin-bottom: 20px;
+    line-height: 40px;
+  	margin-left: 10px;
+    margin-bottom: 20px;
   }
 }
 
 @media (min-width: 900px) {
   .body-properties {
-      margin: 100px;
+    margin: 100px;
   }
 
   .material-icons {
-      display: none !important;
+    display: none !important;
   }
 
   #logo-with-monero {
-      max-width: 50%;
-      margin-left: 100px;
-      margin-top: 5px;
+    max-width: 50%;
+    margin-left: 100px;
+    margin-top: 5px;
   }
 
   nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-  }
-  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	}
+
   ul {
-      overflow: hidden;
+		overflow: hidden;
   }
   
   li {
-      float: left;
+    float: left;
   }
   
   li a {
-      display: block;
-      padding: 30px 50px;
-      margin-right: 50px;
+    display: block;
+    padding: 30px 50px;
+    margin-right: 50px;
   }
 
   h1 {
-      font-size: 3.5rem;
-      margin-bottom: 20px;
-      line-height: 60px;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    line-height: 60px;
   }
 
   #smartphone {
-      max-width: 60%;
+    max-width: 60%;
   }    
 
   .section-headers {
-      scroll-margin-top: 90px;
-  }
-
-  .hamburger {
-      display: none;
+    scroll-margin-top: 90px;
   }
 }
